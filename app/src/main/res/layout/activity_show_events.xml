@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowEvents">
+
+    <TextView
+        android:id="@+id/nome"
+        android:layout_width="156dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="43dp" />
+
+    <TextView
+        android:id="@+id/descrizione"
+        android:layout_width="298dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@+id/nome"
+        tools:layout_editor_absoluteX="43dp" />
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="96dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descrizione" />
+
+    <TextView
+        android:id="@+id/ora"
+        android:layout_width="99dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/indirizzo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/data"
+        app:layout_constraintTop_toBottomOf="@+id/descrizione"
+        app:layout_constraintVertical_bias="0.22" />
+
+    <TextView
+        android:id="@+id/nomePosto"
+        android:layout_width="161dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="68dp"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@+id/data"
+        tools:layout_editor_absoluteX="43dp" />
+
+    <TextView
+        android:id="@+id/indirizzo"
+        android:layout_width="264dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomePosto"
+        app:layout_constraintVertical_bias="0.184"
+        tools:layout_editor_absoluteX="43dp" />
+</android.support.constraint.ConstraintLayout>
